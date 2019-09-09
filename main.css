@@ -1,3 +1,9 @@
+/*Imports*/
+@font-face {
+   src: url("fonts/Calluna-Regular.otf");
+   font-family: 'Calluna';
+}
+
 /*Start global*/
 *{
   margin: 0;
@@ -16,6 +22,8 @@ body{
   height: 100%;
   background: url("images/sitebg.jpg") no-repeat center fixed;
   background-size: cover;
+  /*background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23221E3F' fill-opacity='1' d='M0,64L34.3,85.3C68.6,107,137,149,206,160C274.3,171,343,149,411,160C480,171,549,213,617,240C685.7,267,754,277,823,266.7C891.4,256,960,224,1029,213.3C1097.1,203,1166,213,1234,186.7C1302.9,160,1371,96,1406,64L1440,32L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") no-repeat center fixed;
+  background-size: cover;*/
 }
 
 a{
@@ -34,6 +42,55 @@ img{
 /*End global*/
 
 /*Start reusable*/
+.container{
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-heading{
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.section-heading h1{
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, .3);
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.section-heading h1::before,
+.section-heading h1::after{
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.section-heading h1::before{
+  width: 10rem;
+  height: 3px;
+  border-radius: .8rem;
+}
+
+.section-heading h1::after{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  bottom: -1rem;
+}
+
+.section-heading h6{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
 /*End reusable*/
 
 /*Start header*/
@@ -47,6 +104,7 @@ header{
   height: 100vh;
   position: fixed;
   top: -100vh;
+  z-index: 50;
   background-color: #16162d;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
@@ -67,7 +125,7 @@ li{
 }
 
 .nav-link{
-  font-family: 'The Historia Demo', sans-serif;
+  font-family: 'Calluna', sans-serif;
   font-size: 5rem;
   padding: 1rem;
 }
@@ -132,12 +190,128 @@ li{
 .open .bar.end{
   transform: rotate(-450deg) translateX(-0.8rem);
 }
+
+.landing-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.landing-text h1{
+  font-size: 10rem;
+  font-family: 'Calluna', sans-serif;
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  user-select: none;
+}
+
+.landing-text h6{
+  font-size: 2rem;
+  font-weight: 300;
+}
 /*End header*/
 
 /*Start about*/
+.about .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading{
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.about-heading h1{
+  font-size: 10rem;
+  opacity: .3;
+}
+
+.about-heading h6{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.profile-img{
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.about-details{
+  flex: 1;
+}
+
+.social-media{
+  margin-top: 5rem;
+}
+
+.social-media i{
+  font-size: 5rem;
+  transition: color 650ms;
+}
+
+.fa-facebook-square:hover{
+  color: #4267b2;
+}
+
+.fa-linkedin:hover{
+  color: #0076b5;
+}
+
+.fa-github-square:hover{
+  color: #24292e;
+}
+
 /*End about*/
 
 /*Start services*/
+.my-skills{
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+}
+
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skill h1{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
+}
+
+.icon-container{
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #ffe838;
+  background-color: #fd57bf;
+  margin-bottom: 2rem;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.icon-container i{
+  color: #ffe838;
+  font-size: 5rem;
+  margin: auto;
+  transform: rotate(-45deg);
+}
 /*End services*/
 
 /*Start portfolio*/
