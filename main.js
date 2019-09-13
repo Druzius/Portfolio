@@ -27,3 +27,25 @@ $(document).ready(function () {
     once: true
   });
 });
+
+const toggleModal = () => {
+  document.querySelector('.modal')
+  .classList.toggle('modal-hidden');
+};
+
+const toggleWrapper = () => {
+  document.querySelector('.wrapper')
+  .classList.toggle('modal-mode');
+};
+
+document.querySelector('#view-details')
+.addEventListener('click', toggleModal);
+
+document.querySelector('#view-details')
+.addEventListener('click', toggleWrapper);
+
+document.querySelector('.close-bar span')
+.addEventListener('click', toggleModal);
+
+document.querySelector('.close-bar span')
+.addEventListener('click', toggleWrapper);

@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="wrapper modal-mode">
     <header>
         <div class="menu-toggler">
             <div class="bar half start"></div>
@@ -47,7 +49,7 @@
     <section class="about" id="about">
         <div class="container">
             <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-                <img src="images/profile.jpeg" alt="">
+                <img src="images/pp3.png" alt="">
             </div>
             <div class="about-details" data-aos="fade-left" data-aos-delay="600">
                 <div class="about-heading">
@@ -113,13 +115,16 @@
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="images/portitem1.jpeg" alt="">
+                    <img src="images/jobkitchen.png" alt="">
                 </div>
                 <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
                     <h6>Web Development</h6>
-                    <h1>Blog Website</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In reprehenderit ut porro.</p>
-                    <a href="#" class="cta">View Details</a>
+                    <h1>Job Kitchen</h1>
+                    <p>Job Kitchen is a job posting website for the restaurant and hospitaly industry in Israel.</p>
+                    <div class="portfolio-links">
+                      <p class="cta has-margin-right" id="view-details">View Details</p>
+                      <a href="#" class="cta">Visit Website</a>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-item">
@@ -146,6 +151,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal modal-hidden">
+      <div class="modal-content">
+        <div class="close-bar">
+            <span>X</span>
+        </div>
+        <div class="modal-img">
+          <img src="images/jobk.png" alt="">
+        </div>
+        <div class="modal-description">
+          <h2>Job Kitchen</h2>
+          <p>This is a modal</p>
+        </div>
+      </div>
+    </div>
+
     </section>
 
     <section class="experience" id="experience">
@@ -176,10 +197,23 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-heading">
-                <h1>Contact</h1>
-                <h6>Let's work together</h6>
+                <h1>Get in Touch</h1>
+                <h6>struben@gmail.com</h6>
             </div>
-            <form action="" data-aos="fade-up" data-aos-delay="300">
+            <div class="social-media">
+                <ul class="nav-list">
+                  <li>
+                    <a href="#" class="icon-link"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="icon-link"><i class="fab fa-github-square"></i></a>
+                  </li>
+                </ul>
+            </div>
+            <!-- <form action="" data-aos="fade-up" data-aos-delay="300">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="email">Email</label>
@@ -193,7 +227,7 @@
                 <label for="subject">Subject:</label>
                 <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
                 <input type="submit" value="Submit">
-            </form>
+            </form> -->
         </div>
     </section>
     <footer class="copyright">
@@ -202,6 +236,7 @@
         </div>
         <p>&copy; 2019 Ruben den Hollander</p>
     </footer>
+</div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
