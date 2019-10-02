@@ -21,6 +21,12 @@ $(document).ready(function () {
       }, 2000);
   });
 
+  $('#down').on('click', function () {
+      $('html, body').animate( {
+          scrollTop: $('#about').offset().top -50
+      }, 1000);
+  });
+
   AOS.init({
     easing: 'ease',
     duration: 1800,
@@ -59,6 +65,12 @@ document.querySelector('.close-bar span')
 .addEventListener('click', toggleModal);
 
 document.querySelector('.close-bar span')
+.addEventListener('click', toggleWrapper);
+
+document.querySelector('.close-iframe span')
+.addEventListener('click', toggleIframe);
+
+document.querySelector('.close-iframe span')
 .addEventListener('click', toggleWrapper);
 
 

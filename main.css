@@ -218,7 +218,7 @@ li{
 }
 
 .landing-text h1{
-  font-size: 8rem;
+  font-size: 7rem;
   font-family: 'Calluna', sans-serif;
   background: linear-gradient(to top, #fff, #f4f4f4);
   -webkit-background-clip: text;
@@ -228,8 +228,30 @@ li{
 }
 
 .landing-text h6{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
+}
+
+.down{
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #eee;
+  bottom: 6rem;
+  left: 47.5vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  display: flex;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+.down i{
+  color: #16162d;
+  font-size: 2rem;
+  margin: auto;
 }
 /*End header*/
 
@@ -248,7 +270,7 @@ li{
 }
 
 .about-heading h1{
-  font-size: 10rem;
+  font-size: 8rem;
   opacity: .3;
 }
 
@@ -474,6 +496,18 @@ li{
 
 .iframe-hidden{
   display: none;
+}
+
+.close-iframe{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  margin-right: -2rem;
+  cursor: pointer;
 }
 
 /*End portfolio*/
