@@ -38,10 +38,21 @@ const toggleWrapper = () => {
   .classList.toggle('modal-mode');
 };
 
+const toggleIframe = () => {
+  document.querySelector('.iframe')
+  .classList.toggle('iframe-hidden');
+};
+
 document.querySelector('#view-details')
 .addEventListener('click', toggleModal);
 
 document.querySelector('#view-details')
+.addEventListener('click', toggleWrapper);
+
+document.querySelector('#open-iframe')
+.addEventListener('click', toggleIframe);
+
+document.querySelector('#open-iframe')
 .addEventListener('click', toggleWrapper);
 
 document.querySelector('.close-bar span')
@@ -49,3 +60,6 @@ document.querySelector('.close-bar span')
 
 document.querySelector('.close-bar span')
 .addEventListener('click', toggleWrapper);
+
+
+

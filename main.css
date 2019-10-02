@@ -416,7 +416,7 @@ li{
   display: none;
 }
 
-.modal .close-bar{
+.close-bar{
   display: flex;
   justify-content: flex-end;
   font-size: 2rem;
@@ -454,6 +454,26 @@ li{
 
 .modal-description{
   text-align: left;
+}
+
+#open-iframe{
+  cursor: pointer;
+}
+
+.iframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 110rem;
+}
+
+.iframe-hidden{
+  display: none;
 }
 
 /*End portfolio*/
