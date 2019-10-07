@@ -476,6 +476,8 @@ li{
 
 .modal-description{
   text-align: left;
+  width: 60%;
+  padding-top: 3rem;
 }
 
 #open-iframe{
@@ -580,8 +582,16 @@ li{
   font-weight: 300;
   margin-top: 5rem;
 }
-  /*background-color: rgba(0, 13, 47, 0.7);*/
 
+.cv-link{
+  margin-top: 2rem;
+}
+
+.cv-link:hover,a:hover{
+  color: #c5c5c5;
+}
+
+/*background-color: rgba(0, 13, 47, 0.7);*/
 
 form{
   width: 70%;
