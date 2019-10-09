@@ -459,8 +459,6 @@ li{
 .modal-img img{
   border-left: 2px solid #2F2F2F;
   width: 85%;
-
-
 }
 
 .modal-img{
@@ -765,6 +763,29 @@ input[type="submit"]:hover{
 
   .icon-container i{
     font-size: 4rem;
+  }
+
+  .modal-content{
+    padding: 3rem 2rem;
+  }
+
+  /*.close-bar{
+    margin-top: -2rem;
+    margin-right: -1rem;
+  }*/
+
+  .modal-img img{
+  width: 90%;
+  }
+
+  .mobile-img{
+    width: 46%;
+    top: 21rem;
+    right: 0.2rem;
+  }
+
+  .modal-description{
+    width: 100%;
   }
 
   .timeline ul{
