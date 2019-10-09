@@ -470,14 +470,19 @@ li{
 .mobile-img{
   width: 45%;
   position: absolute;
-  bottom: 16rem;
+  bottom: 11rem;
   right: 3rem;
 }
 
 .modal-description{
+
   text-align: left;
   width: 60%;
   padding-top: 3rem;
+}
+
+.modal-description p{
+  font-size: 16px;
 }
 
 #open-iframe{
@@ -689,7 +694,7 @@ input[type="submit"]:hover{
 /*End animations*/
 
 /*Start media queries*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body{
     width: 100%;
     height: 100%;
@@ -703,6 +708,17 @@ input[type="submit"]:hover{
 
   .landing-text h6{
     font-size: 1.7rem;
+  }
+
+  .landing-text h1::before{
+  content: '';
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(202, 87, 49, 1);
+  width: 18rem;
+  height: 5px;
   }
 
   .nav-list{
@@ -727,6 +743,15 @@ input[type="submit"]:hover{
 
   .about-details .nav-list{
     flex-direction: initial;
+  }
+
+  .stack p{
+    width: 80%;
+    text-align: center;
+  }
+
+  .contact .nav-list{
+    display: none;
   }
 
   .about-details li{
@@ -761,6 +786,7 @@ input[type="submit"]:hover{
   height: 100%;
   background: url("images/colorgeo-mobile.jpg") no-repeat center fixed;
   background-size: cover;
+  margin: 0 auto;
   }
 
   .menu-toggler{
@@ -826,8 +852,17 @@ input[type="submit"]:hover{
     width: 100%;
   }
 
+  .copyright{
+    width: 100vw;
+    left: -4rem;
+  }
+
   .up{
-    right: 2rem;
+    display: none;
+  }
+
+  .down{
+    display: none;
   }
 }
 /*End media queries*/
