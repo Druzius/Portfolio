@@ -51,7 +51,7 @@ img{
 
 .container{
   width: 90%;
-  max-width: 100rem;
+  max-width: 90rem;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -285,7 +285,7 @@ li{
 }
 
 .profile-img img{
-  width: 80%;
+  width: 75%;
   border-radius: 10%;
 }
 
