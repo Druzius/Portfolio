@@ -844,8 +844,13 @@ input[type="submit"]:hover{
     flex-direction: column;
   }
 
+  .about p{
+    text-align: center;
+  }
+
   .profile-img{
-    margin: 0 0 7rem 0;
+    padding-bottom: 7rem;
+    padding-left: 4rem;
   }
 
   .portfolio-item{

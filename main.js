@@ -28,11 +28,13 @@ $(document).ready(function () {
   });
 
   AOS.init({
+    disable: 'phone',
     easing: 'ease',
     duration: 1800,
     once: true
   });
 });
+
 
 const toggleModal = () => {
   document.querySelector('.modal')
