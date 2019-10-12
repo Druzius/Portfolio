@@ -42,6 +42,11 @@ p{
 img{
   width: 100%;
 }
+
+iframe{
+  height: 55rem;
+  width: 110rem;
+}
 /*End global*/
 
 /*Start reusable*/
@@ -811,6 +816,11 @@ input[type="submit"]:hover{
   margin: 0 auto;
   }
 
+  iframe{
+  height: 45rem;
+  width: 100vw;
+  }
+
   .menu-toggler{
     top: 2rem;
     right: 2rem;
@@ -878,6 +888,10 @@ input[type="submit"]:hover{
     right: -3rem;
   }
 
+  .react-app.modal-content{
+    padding: 3rem 0rem;
+  }
+
   .timeline p{
     font-size: 1.6rem;
   }
@@ -892,6 +906,10 @@ input[type="submit"]:hover{
 
   .close-bar{
     z-index: 100;
+  }
+
+  .close-iframe{
+    margin-right: 1rem;
   }
 
   .copyright{
