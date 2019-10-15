@@ -89,15 +89,7 @@ iframe{
 .section-heading h1::before{
   width: 10rem;
   height: 5px;
-  /*border-radius: .8rem;*/
 }
-
-/*.section-heading h1::after{
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 100%;
-  bottom: -1rem;
-}*/
 
 .section-heading h6{
   font-size: 1.6rem;
@@ -344,10 +336,6 @@ li{
   margin: 2rem -2px 2rem 0;
 }
 
-/*.services .container{
-  background-color: rgba(0, 13, 47, 0.7);
-}*/
-
 .icon-container{
   width: 10rem;
   height: 10rem;
@@ -428,7 +416,6 @@ li{
   height: 100%;
   width: 100%;
   max-width: 110rem;
-
 }
 
 .modal-mode{
@@ -598,8 +585,6 @@ li{
 .cv-link:hover,a:hover{
   color: #c5c5c5;
 }
-
-/*background-color: rgba(0, 13, 47, 0.7);*/
 
 form{
   width: 70%;
