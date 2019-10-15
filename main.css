@@ -891,9 +891,17 @@ input[type="submit"]:hover{
     right: 0.2rem;
   }
 
+  .modal-description{
+    padding-top: 10rem;
+  }
+
   .mobile-img img{
-    bottom: 44rem;
+    bottom: 53rem;
     right: -3rem;
+  }
+
+  .jobk.modal-content{
+    height: 80vh;
   }
 
   .react-app.modal-content{
