@@ -473,7 +473,7 @@ li{
 .mobile-img{
   width: 45%;
   position: absolute;
-  bottom: 11rem;
+  bottom: 6rem;
   right: 3rem;
 }
 
@@ -790,7 +790,7 @@ input[type="submit"]:hover{
   }
 
   .mobile-img img{
-    bottom: 8rem;
+    bottom: 14rem;
     right: -3rem;
   }
 
@@ -821,7 +821,7 @@ input[type="submit"]:hover{
   }
 
   iframe{
-  height: 50rem;
+  height: 52rem;
   width: 100vw;
   }
 
@@ -896,7 +896,7 @@ input[type="submit"]:hover{
   }
 
   .mobile-img img{
-    bottom: 53rem;
+    bottom: 57rem;
     right: -3rem;
   }
 
