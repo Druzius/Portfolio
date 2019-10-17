@@ -848,6 +848,10 @@ input[type="submit"]:hover{
     font-size: 3.5rem;
   }
 
+  .about-heading h1{
+    font-size: 6rem;
+  }
+
   .about .container{
     flex-direction: column;
     padding-left: 0rem;
@@ -890,7 +894,7 @@ input[type="submit"]:hover{
   }
 
   .mobile-img img{
-    bottom: 53rem;
+    bottom: 50rem;
     right: -3rem;
   }
 
